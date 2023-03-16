@@ -44,16 +44,9 @@ hours=1.3
 minutes = hours * 60;
 seconds = minutes * 60;
 print(seconds);
+                                                                                         
 
-
-def time_to_seconds(hours, minutes):
-    """
-    This function takes two integers hours and minutes as input, converts them to seconds, and adds them
-    """
-    return hours * 3600 + minutes * 60
-print(time_to_seconds(1, 18)) # Output: 5400
-
-
+                                                                                         
 
 
 
