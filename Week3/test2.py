@@ -1,17 +1,3 @@
-"""
-4. Extra Knowledge 
-Create a function that takes two strings as arguments and return either True or False depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
-Examples
-"AB", "CD" ➞ True
-"ABC", "DE" ➞ False
-"hello", "edabit" ➞ False
-5. Given a string, return True if its length is even or False if the length is odd.
-
-"""
-
-
-
-
 """1. Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
 Can you help her?
 Examples
@@ -44,6 +30,25 @@ number=-55
 five_divisible=number%5==0
 print(five_divisible)
 
+"""4. Extra Knowledge 
+Create a function that takes two strings as arguments and return either True or False depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+Examples
+"AB", "CD" ➞ True
+"ABC", "DE" ➞ False
+"hello", "edabit" ➞ False
+    """
+a="AB"
+b="BgC"
+result="True"*(len(a)==len(b))+"False"*(len(a)!=len(b))
+print(result)
+
+"""
+5. Given a string, return True if its length is even or False if the length is odd.
+"""
+a="AkB"
+result="True"*(len(a)%2==0)+"False"*(len(a)%2!=0)
+print(result)
+
 """6. Create a function that takes a string txt and a number n and returns the repeated string n number of times.
 If given argument txt is not a string, return Not A String !!
 Examples
@@ -51,7 +56,6 @@ Examples
 "Matt", 3 ➞ "MattMattMatt"
 1990, 7 ➞ "Not A String !!"
 """
-
 txt=5
 number=5
 result1=txt*number*(type(txt)!=type(number))
@@ -59,7 +63,5 @@ result2="Not A String !!"*(type(txt)==type(number))
 print(result1,result2)
 
 
-# a="AB"
-# b="BC"
-# x=type(a)==type(b)
-# print(id(b))
+
+
