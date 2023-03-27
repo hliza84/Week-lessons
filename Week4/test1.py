@@ -78,7 +78,10 @@ d = parts[3]
 e = parts[4]
 f = parts[5]
 result = eval(f"{a} {b} {c} {d} {e} {f}")
+
 print(result)
+exp = "3 < 7 < 11 >15"
+eval(f"print{x}")
 
 """7. Create a function that replaces all the vowels in a string with a specified character.
 Examples
