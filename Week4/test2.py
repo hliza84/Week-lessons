@@ -75,22 +75,23 @@ Examples
 "12/31/2019" ➞ "20193112"
 "01/15/2019" ➞ "20191501"
     """
-lst = ["11", "/", "12", "/", "2019"]
-lst.reverse()
-print(lst)
-
+date_str = "11/12/2019"
+date_parts = date_str.split('/')
+year = date_parts[2]
+month = date_parts[0].rjust(2, '0')
+day = date_parts[1].rjust(2, '0')
+new_date_str = year + day + month
+print(new_date_str)
 """9. Create a function that takes two numbers as arguments num, length and returns a list of multiples of num until the list length reaches length.
 Examples
 7, 5 ➞ [7, 14, 21, 28, 35]
 12, 10 ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
 17, 6 ➞ [17, 34, 51, 68, 85, 102]"""
 
-length = 5
 num = 7
-result = []
-for i in range(1, length+1):
-    result.append(num * i)
-print(result)
+length = 5
+lst = list(range(num, num*length+1, num))
+print(lst)
 
 """10. Create a function that takes a list of numbers lst, a string s and return a list of numbers as per the following rules:
 "Asc" returns a sorted list in ascending order.
