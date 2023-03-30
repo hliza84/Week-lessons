@@ -82,6 +82,9 @@ month = date_parts[0].rjust(2, '0')
 day = date_parts[1].rjust(2, '0')
 new_date_str = year + day + month
 print(new_date_str)
+"""Another solving"""
+x = "11/12/2009"
+print(x[6:]+x[3:5]+x[:2])
 """9. Create a function that takes two numbers as arguments num, length and returns a list of multiples of num until the list length reaches length.
 Examples
 7, 5 ➞ [7, 14, 21, 28, 35]
@@ -108,3 +111,10 @@ s = input("Enter 'Asc' or 'Dsc' to sort the list:")
 mylst = sorted(lst)*int(s == "Asc")+sorted(lst, reverse=True) * \
     (s == "Dsc")+lst*(s == "None")
 print(mylst)
+
+x, y = [5, 4, 6, 7, 2, 5, 1, 9], "Asc"
+asc = sorted(x)
+dsc = sorted(x, reverse=True)
+print(
+    (y == "Asc")*sorted(x)+(y == "Dsc")*sorted(x, reverse=True)+x
+)
