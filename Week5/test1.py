@@ -32,10 +32,10 @@ find_bob(["Jimmy", "Layla", "James"]) ➞ -1
 Notes
 Assume all names start with a capital letter and are lowercase thereafter (i.e. don't worry about finding "BOB" or "bob").
         """
-names = ["Bob", "Jimmy", "Layla"]
-find_bob = (("Bob" not in names) *
-            (-1) + (names.index("Bob")*("Bob" in names)))
-print(find_bob)
+names = ["Jimmy", "Bob", "Layla"]
+boolValue = "Bob" in names and names.index("Bob")
+print((not boolValue and isinstance(boolValue, bool))*-1+boolValue)
+
 
 """EXTRA Knowledge
 4. Given a list of numbers, write a function that returns a list that...
