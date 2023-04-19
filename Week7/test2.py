@@ -169,6 +169,14 @@ def matrix(x, y, z):
 
 print(matrix(2, 1, 3))
 
+
+def matrix(x, y, z):
+    result = [[c for j in range(y)]for i in range(x)]
+
+    return result
+
+
+print(matrix(2, 1, 3))
 """8. Given a string of numbers separated by a comma and space, return the product of the numbers.
 Examples
 multiplyNums("2, 3") ➞ 6
