@@ -1,7 +1,4 @@
-"""
 
-3. Write function which take a function as an input and run it and print how count how many times I have run the input provide functions.
-"""
 """1. Using .sort() method, create a lambda function that sorts the list in descending order. Refrain from using the reverse parameter.
 (Hint: lambda will be passed to sort method's key parameter as argument)
 Please check out Hint 0 below to be informed about a glitch regarding this exercise.
@@ -20,10 +17,13 @@ lst = [(19542209, "New York"), (4887871, "Alabama"), (1420491, "Hawaii"),
        (626299, "Vermont"), (1805832, "West Virginia"), (39865590, "California")]
 
 
-def last_char_reverse(lst):
-    for i in lst:
-        return lst[i][-1]
+def last_char_reverse(item):
+    return item[1][-1]
 
 
-# sorted_lst = sorted(lst, key=lambda x: last_char_reverse(x), reverse=True)
-print(last_char_reverse(lst))
+sorted_lst = sorted(lst, key=lambda x: last_char_reverse(x), reverse=True)
+print(sorted_lst)
+
+"""
+3. Write function which take a function as an input and run it and print how count how many times I have run the input provide functions.
+"""
